@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
         ),
 
         // The AppBar title.
-        title: Text('Demo4 | SHRINE'),
+        title: Text('Demo4 | Shrine'),
 
         // Action buttons to the right.
         actions: <Widget>[
