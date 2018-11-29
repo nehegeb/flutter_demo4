@@ -55,6 +55,8 @@ final ThemeData _kShrineTheme = _buildShrineTheme();
 ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
+
+    // Base theme values.
     accentColor: kShrineBrown900,
     primaryColor: kShrinePink100,
     buttonColor: kShrinePink100,
@@ -63,11 +65,16 @@ ThemeData _buildShrineTheme() {
     textSelectionColor: kShrinePink100,
     errorColor: kShrineErrorRed,
     
+    // Text theme values.
     textTheme: _buildShrineTextTheme(base.textTheme),
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
 
-    // TODO: Add the icon themes (103)
+    // Icon theme values.
+    primaryIconTheme: base.iconTheme.copyWith(
+      color: kShrineBrown900,
+    ),
+
     // TODO: Decorate the inputs (103)
   );
 }
