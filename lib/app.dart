@@ -75,7 +75,10 @@ ThemeData _buildShrineTheme() {
       color: kShrineBrown900,
     ),
 
-    // TODO: Decorate the inputs (103)
+    // Input field theme values.
+    inputDecorationTheme: InputDecorationTheme(
+      border: OutlineInputBorder(),
+    ),
   );
 }
 
