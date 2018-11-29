@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
+import 'colors.dart';
 
 import 'home.dart';
 import 'login.dart';
@@ -31,7 +32,7 @@ class ShrineApp extends StatelessWidget {
       // TODO: Change backLayer field value to CategoryMenuPage (104)
       initialRoute: '/login',
       onGenerateRoute: _getRoute,
-      // TODO: Add a theme (103)
+      theme: _kShrineTheme,
     );
   }
 
@@ -48,5 +49,22 @@ class ShrineApp extends StatelessWidget {
   }
 }
 
-// TODO: Build a Shrine Theme (103)
+// The 'Shrine' theme for the app.
+final ThemeData _kShrineTheme = _buildShrineTheme();
+ThemeData _buildShrineTheme() {
+  final ThemeData base = ThemeData.light();
+  return base.copyWith(
+    accentColor: kShrineBrown900,
+    primaryColor: kShrinePink100,
+    buttonColor: kShrinePink100,
+    scaffoldBackgroundColor: kShrineBackgroundWhite,
+    cardColor: kShrineBackgroundWhite,
+    textSelectionColor: kShrinePink100,
+    errorColor: kShrineErrorRed,
+    // TODO: Add the text themes (103)
+    // TODO: Add the icon themes (103)
+    // TODO: Decorate the inputs (103)
+  );
+}
+
 // TODO: Build a Shrine Text Theme (103)
