@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
     // The card itself.
     return products.map((product) {
       return Card(
-        // TODO: Adjust card heights (103)
+        elevation: 0.0,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[

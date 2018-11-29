@@ -79,6 +79,7 @@ ThemeData _buildShrineTheme() {
     inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(),
     ),
+    
   );
 }
 
