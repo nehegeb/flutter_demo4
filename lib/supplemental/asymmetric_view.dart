@@ -88,7 +88,7 @@ class AsymmetricView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       scrollDirection: Axis.horizontal,
-      padding: EdgeInsets.fromLTRB(0.0, 34.0, 16.0, 44.0),
+      padding: EdgeInsets.fromLTRB(0.0, 54.0, 16.0, 24.0),
       children: _buildColumns(context),
     );
   }
